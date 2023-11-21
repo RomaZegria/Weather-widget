@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.weather {
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.wrapper__logo {
+  margin-bottom: 35px;
+}
+
+.weather__city {
+  width: 100%;
+}
+
+.city {
+  position: relative;
+}
+
+.city__name {
+  padding-left: 14px;
+  height: 49px;
+  background: #ffffff;
+  border: 1px solid #ababab;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.city__clear-sign {
+  z-index: 5;
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  cursor: pointer;
+}
+
+.city__error-note {
+  font-size: 0.7rem;
+  color: red;
+  font-weight: 600;
+}
+
+.city__selected-city {
+  margin: 10px 14px;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 145.8%;
+  letter-spacing: 0.02em;
+  color: #676767;
+}
+
+.weather__field {
+  width: 100%;
+}
+
+.current-weather {
+  width: 100%;
+  color: #fff;
+  background-color: #ff4f00;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.56rem 0.4rem 0.6rem;
+  border-radius: 10px;
+}
+
+.weather__current-state {
+  width: 100%;
+  margin-bottom: 2.2rem;
+}
+
+.current-weather__min-temp {
+  font-size: 3.375rem;
+  font-weight: 700;
+  line-height: 145.8%;
+  letter-spacing: -0.2025rem;
+}
+
+.current-weather__weather {
+  font-size: 0.875rem;
+  line-height: 145.8%;
+  letter-spacing: 0.0175rem;
+  display: inline-block;
+}
+
+.current-weather__max-temp {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 145.8%;
+  letter-spacing: -0.07438rem;
+  display: inline-block;
+}
+
+.current-weather__info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.current-weather__sky-state {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 145.8%;
+  letter-spacing: 0.0175rem;
+}
+
+.current-weather__city-name {
+  font-size: 0.875rem;
+  line-height: 145.8%;
+  letter-spacing: 0.0175rem;
+}
+
+.current-weather__image {
+  display: flex;
+  justify-content: center;
+}
+
+.weather__pitch {
+  width: 100%;
+}
+
+.weather__field {
+  padding: 0.5rem 0;
+}
+
+.field {
+  width: 100%;
+  border-top: 1px solid #dddddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.56rem;
+}
+
+.field__day-name {
+  font-size: 1.0625rem;
+  line-height: 145.8%;
+  letter-spacing: 0.02125rem;
+}
+
+.field__img {
+}
+
+.field__day-weather {
+  font-size: 0.875rem;
+  line-height: 145.8%;
+  letter-spacing: 0.0175rem;
+}
+
+.field__info {
+  text-align: end;
+}
+
+.field__day-part {
+  font-size: 0.5625rem;
+  font-weight: 300;
+  line-height: 145.8%;
+  letter-spacing: 0.01125rem;
+}
+
+.field__temp {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 145.8%;
+  letter-spacing: -0.06125rem;
+}

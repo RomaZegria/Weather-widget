@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Task 2-5</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="weather">
+        <div class="weather__city city">
+          <input
+            type="text"
+            class="city__name"
+            id="cityInput"
+            value="Київ, Kyiv, Ukraine"
+          />
+          <span id="clearInput" class="city__clear-sign">&#xd7;</span>
+          <span class="city__error-note" id="errorReport"></span>
+          <div class="city__selected-city">
+            Selected: <span id="selectedCity">Київ, Kyiv, Ukraine</span>
+          </div>
+        </div>
+        <div class="weather__current-state" id="currentWeather"></div>
+        <div class="weather__field" id="weatherField"></div>
+      </div>
+    </div>
+    <script src="./src/script.js" type="module"></script>
+    <script src="./src/dataFetcher.js" type="module"></script>
+    <script src="./src/displayWeather.js" type="module"></script>
+    <script src="./src/sortFilterUtils.js" type="module"></script>
+    <script src="./src/utilities.js" type="module"></script>
+  </body>
+</html>
